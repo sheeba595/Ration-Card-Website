@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widp=device-widp, initial-scale=1.0">
+    <title>View Application</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./view.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="./image/logo.png" alt="logo">
+        </div>
+        <nav>
+           <a href="./index.html">Home</a>
+           <a href="./about.html">About</a>
+           <a href="./contact.html">Contact</a> 
+        </nav>
+        <div class="login">
+            Login
+        </div>
+    </header>
+
+
+
+<main>
+<img src="./image/appplication.png" alt="application" class="app-img">
+<h1>Tracking Applications</h1>
+<p>Your application for a new ration card has been successfully submitted. <br>Please keep the following application number for tracking purposes.</p>
+<div class="number">
+    <h3>Application Number</h3>
+     <input class="num" type="text">
+</div>
+<div class="buttons">
+    <div class="track">
+        Track Application Status
+    </div>
+    <div class="dashboard">
+        Go to Dashboard
+    </div>
+</div>
+</main>
+
+    <footer>
+        <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Accessibility</li>
+        </ul>
+        <p>&copy; 2024 Ration Card Services. All rights reserved</p>
+    </footer>
+</body>
+
+<script >
+const num=document.querySelector(".num");
+const track=document.querySelector(".track");
+const dashboard=document.querySelector(".dashboard");
+dashboard.addEventListener("click",()=>{
+    window.location.href="./dashboard.html";
+})
+track.addEventListener("click",()=>{
+    if(num.value.trim()==""){
+        alert("Enter application number");
+    }
+    else{
+        window.location.href="./track.html";
+    }
+})
+ 
+
+</script>
+ </html>

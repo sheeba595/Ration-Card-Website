@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widp=device-widp, initial-scale=1.0">
+    <title>Applicant Form</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./applicant-3.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="./image/logo.png" alt="logo">
+        </div>
+        <nav>
+           <a href="./index.html">Home</a>
+           <a href="./about.html">About</a>
+           <a href="./contact.html">Contact</a> 
+        </nav>
+        <div class="login">
+            Login
+        </div>
+    </header>
+
+ <div class="stepper">
+  <div class="step">1</div>
+  <div class="line1"></div>
+
+  <div class="step">2</div>
+  <div class="line1"></div>
+
+  <div class="step">3</div>
+  <div class="line"></div>
+
+  <div class="step">4</div>
+</div>
+
+<div class="details">
+    <h1>Family Details</h1>
+    <p>Please provide details of all family members to be included in pe ration card.</p>
+
+    <div class="content">
+        <h3>Add Family Member</h3>
+        <label for="member"></label>
+        <select name="user_mem" id="member">
+            <option value="">Select Relationship</option>
+            <option value="child">Child</option>
+            <option value="husband">Husband</option>
+            <option value="wife">Wife</option>
+            <option value="Faper">Faper</option>
+            <option value="moper">Moper</option>
+        </select>
+        <input type="text" id="age" name="age" placeholder="Age">
+        <input type="text" id="aadhar" name="user_aadhar" placeholder="Aadhar Number">
+
+        <div class="add">
+            Add Member
+                </div>
+    </div>
+
+
+</div>
+ <h3>Family Members</h3>
+ 
+<div class="table-card">
+  <table class="family-table">
+    <thead>
+      <tr>
+        <th>Relationship</th>
+        <th>Age</th>
+        <th>Aadhaar Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="link">Spouse</td>
+        <td>32</td>
+        <td class="link">XXXX-XXXX-1234</td>
+      </tr>
+      <tr>
+        <td class="link">Child</td>
+        <td>10</td>
+        <td class="link">XXXX-XXXX-5678</td>
+      </tr>
+      <tr>
+        <td class="link">Child</td>
+        <td>5</td>
+        <td class="link">XXXX-XXXX-9012</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+    
+
+    
+
+ 
+<div class="buttons">
+    <div class="previous">
+        Previous
+    </div>
+    <div class="next1">
+    Next
+</div>
+ </div>
+    <footer>
+        <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Accessibility</li>
+        </ul>
+        <p>&copy; 2024 Ration Card Services. All rights reserved</p>
+    </footer>
+</body>
+
+<script >
+
+    //applicant-2.html
+const next1=document.querySelector(".next1");
+next1.addEventListener("click",()=>{
+  window.location.href="./applicant-4.html";
+});
+
+const previous=document.querySelector(".previous");
+previous.addEventListener("click",()=>{
+    window.location.href="./applicant-2.html";
+});
+
+</script>
+ </html>

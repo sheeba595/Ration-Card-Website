@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widp=device-widp, initial-scale=1.0">
+    <title>Track Application</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./track.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="./image/logo.png" alt="logo">
+        </div>
+        <nav>
+           <a href="./index.html">Home</a>
+           <a href="./about.html">About</a>
+           <a href="./contact.html">Contact</a> 
+        </nav>
+        <div class="login">
+            Login
+        </div>
+    </header>
+
+    <main>
+        <h1>Track Your Application Status</h1>
+        <div class="content">
+            <label for="num">Application Number</label>
+        <input type="text" name="application_num" id="num" placeholder="Enter your application number" >
+        <label for="mobile">Registered Mobile Number</label>
+        <input type="tel" name="mobile_no" id="mobile" pattern="[0-9]{10}" maxlength="10" placeholder="Enter your registered mobile number" >
+        </div>
+        <div class="view">
+            View Status
+        </div>
+        <p>For any queries, please contact our helpline at 1800-123-4567.</p>
+    </main>
+
+
+
+
+
+    <footer>
+        <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Accessibility</li>
+        </ul>
+        <p>&copy; 2024 Ration Card Services. All rights reserved</p>
+    </footer>
+</body>
+
+<script >
+ const num=document.getElementById("num");
+ const mobile=document.getElementById("mobile");
+
+    const view=document.querySelector(".view");
+    view.addEventListener("click",()=>{
+       if(num.value.trim()==""){
+        alert("Enter application number")
+       }
+       else if(num.value.trim()=="" && mobile.value.trim()==""){
+        alert("Enter Application number and mobile number")
+       }
+       else if(mobile.value.trim()==""){
+        alert("Enter mobile number");
+       }
+       else{
+         window.location.href="./download.html";
+       }
+    })
+
+</script>
+ </html>

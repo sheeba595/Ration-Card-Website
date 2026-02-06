@@ -1,0 +1,143 @@
+ 
+
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+     font-family: "Inter", sans-serif;
+ 
+}    
+ body{
+      background-color: #e8edf2;
+ }
+
+header{
+  display: flex;
+   box-shadow: 1px 2px 2px lightgrey;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  background: #fff;
+  z-index: 1000;
+
+   background-color: white;
+}
+nav{
+  width: 400px;
+   display: flex;
+  justify-content: space-evenly;
+  margin-left:650px;
+  font-size: 22px;
+  background-color: white;
+  }
+
+  nav a{
+    color: black;
+    text-decoration: none;
+    padding-top:20px;
+      cursor: pointer;
+
+    background-color: white;
+  }
+.login{
+  margin-left: 100px;;
+  background-color:#373C7D ;
+  color: white;
+  font-size: 22px;;
+  height: 45px;
+  width: 100px;
+  cursor: pointer;
+  margin-top: 15px;;
+  padding-top: 8px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+}
+/* 373C7D , E8EDF2 */
+ main{
+  padding: 45px;
+ }
+.active{
+  color: #373C7D;
+  text-decoration:underline;
+}
+/* -------------------------------------------- */
+
+main h1{
+    text-align: center;
+}
+main .content{
+   margin-left: 400px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.content input{
+    height:40px;
+    width: 600px;
+    border-radius: 10px;
+    border: 1px solid #4d7399;
+}
+.content input::placeholder{
+  padding-left: 10px;
+  font-size: 18px;
+  color: #4d7399;
+
+}
+.content label{
+  font-weight: bold;
+}
+.view{
+  background-color: #373C7D;
+  color: white;
+  height: 45px;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px grey;
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  margin-left: 600px;
+}
+main p{
+  color: #4d7399;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;;
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
+ footer{
+  background-color: #373C7D;
+  height: 150px;
+
+ }
+ footer ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 20px;
+  background:transparent;
+  padding: 20px;;
+ }
+ footer ul li{
+    background:transparent;
+
+ }
+ footer p{
+  text-align: center;
+  color: white;
+  font-size: 20px;;
+    background:transparent;
+
+ }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Form</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./applicant.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="./image/logo.png" alt="logo">
+        </div>
+        <nav>
+           <a href="./index.html">Home</a>
+           <a href="./about.html">About</a>
+           <a href="./contact.html">Contact</a> 
+        </nav>
+        <div class="login">
+            Login
+        </div>
+    </header>
+
+ <div class="stepper">
+  <div class="step">1</div>
+  <div class="line activa"></div>
+
+  <div class="step">2</div>
+  <div class="line"></div>
+
+  <div class="step">3</div>
+  <div class="line"></div>
+
+  <div class="step">4</div>
+</div>
+
+
+<div class="details">
+<h1>Applicant Details</h1>
+<div class="applicant-1">
+    <label for="name">Name</label>
+<input type="text" name="user_name" id="name" placeholder="Enter your full name">
+<label for="gender">Gender</label>
+ <select name="user_gender" id="gender">
+    <option  value="">Select Gender</option>
+    <option  value="male">Male</option>
+    <option value="female">Female</option>
+ </select>
+ <label for="dob">Date of Birth</label>
+ <input type="date" id="dob" name="user_dob" placeholder="DD/MM/YYYY">
+<label for="aadhar">Aadhar Number</label>
+<input type="number" id="aadhar"   placeholder="Enter your 12-digit Aadhaar number" name="user_aadhar"  inputmode="numeric"
+  pattern="[0-9]{12}"
+  maxlength="12"
+  required>
+<label for="phone">Mobile Number</label>
+<input type="tel" name="user_phone" id="phone"   maxlength="10"
+  required placeholder="Enter your 10-digit mobile number" pattern="[0-9]{10}">
+</div>
+</div>
+
+<div class="next">
+    Next
+</div>
+ 
+    <footer>
+        <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Accessibility</li>
+        </ul>
+        <p>&copy; 2024 Ration Card Services. All rights reserved</p>
+    </footer>
+</body>
+<script>
+    //applicant-1.html
+const next=document.querySelector(".next");
+next.addEventListener("click",()=>{
+  window.location.href="./applicant-2.html";
+})
+
+</script>
+
+</html>

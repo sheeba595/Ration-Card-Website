@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Updation</title>
+    <link rel="stylesheet" href="./profile.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./image/logo.png" alt="logo"></a>
+        </div>
+        <nav>
+           <a href="./index.html">Home</a>
+           <a  href="./about.html">About</a>
+           <a  href="./contact.html">Contact</a> 
+        </nav>
+        <div class="login">
+            Login
+        </div>
+    </header>
+<main>
+    <h1>Your Profile</h1>
+    <div class="content">
+        <label for="name">Full Name</label>
+    <input type="text" disabled name="user_name" id="name" placeholder="Priya Sharma">
+    <label for="email">Email</label>
+    <input type="email" name="user_email" id="email">
+    <label for="phone">Phone Number</label>
+    <input type="tel" pattern="[0-9]{10}" disabled id="phone" placeholder="9874561230">
+    <label for="aadhar">Aadhar Number</label>
+    <input type="text" disabled name="user_aadhar" id="aadhar" placeholder="6386 5858 7942">
+    </div>
+    <div class="update">
+        Update Profile
+    </div>
+
+</main>
+     
+    <footer>
+        <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Accessibility</li>
+        </ul>
+        <p>&copy; 2024 Ration Card Services. All rights reserved</p>
+    </footer>
+ </body>
+ <script>
+    const update=document.querySelector(".update");
+    const email=document.getElementById("email");
+    update.addEventListener("click",()=>{
+       
+        alert("Updated Successfully!");
+    })
+ </script>
+</html>
